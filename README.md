@@ -73,7 +73,7 @@ so SageMaker keeps local `/opt/ml/checkpoints` in sync with S3.
 ## Prerequisites
 
 ```bash
-pip install "sagemaker>=3.0" boto3 torch torchvision
+pip install -r requirements.txt
 aws configure   # only needed outside AWS
 ```
 
