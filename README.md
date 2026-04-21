@@ -12,11 +12,11 @@ Two launch paths are covered:
 
 | File | Purpose |
 | --- | --- |
-| `training.py` | Training entry-point that runs **inside** the training container. |
-| `inference.py` | Loads the produced `model.tar.gz` and predicts on held-out samples. |
-| `launch_training.py` | Submits the job using the SageMaker SDK v3 `ModelTrainer` API. |
-| `prepare_data.py` | Downloads FashionMNIST locally and uploads it to S3 once. |
-| `requirements.txt` | Single pinned dep list — used both locally and inside the training container. |
+| [`training.py`](training.py) | Training entry-point that runs **inside** the training container. |
+| [`inference.py`](inference.py) | Loads the produced `model.tar.gz` and predicts on held-out samples. |
+| [`launch_training.py`](launch_training.py) | Submits the job using the SageMaker SDK v3 `ModelTrainer` API. |
+| [`prepare_data.py`](prepare_data.py) | Downloads FashionMNIST locally and uploads it to S3 once. |
+| [`requirements.txt`](requirements.txt) | Single pinned dep list — used both locally and inside the training container. |
 
 ## S3 layout
 
@@ -36,7 +36,7 @@ Everything lives under
 Why these paths:
 
 - **`input/`** — matches the `training` input channel declared in
-  `launch_training.py`. SageMaker mounts this S3 prefix at
+  [`launch_training.py`](launch_training.py). SageMaker mounts this S3 prefix at
   `/opt/ml/input/data/training` inside the container, which is what
   `torchvision.datasets.FashionMNIST` points at (via `SM_CHANNEL_TRAINING`).
 - **`output/`** — passed as `output_path=` to the estimator. SageMaker tars
@@ -89,7 +89,7 @@ python launch_training.py \
 
 Either way, the SDK:
 
-1. Tars the current directory (`training.py` + `requirements.txt`) and uploads
+1. Tars the current directory ([`training.py`](training.py) + [`requirements.txt`](requirements.txt)) and uploads
    it to the default SageMaker bucket.
 2. Starts an `ml.g4dn.xlarge` container with the PyTorch 2.3 DLC image
    (resolved via `sagemaker.core.image_uris.retrieve`).
@@ -135,7 +135,7 @@ right DLC image for the region, and wires up metric definitions for you.
 
 ## Step 3 — Predict with the trained model
 
-After the job finishes, `launch_training.py` prints the model artifact URI.
+After the job finishes, [`launch_training.py`](launch_training.py) prints the model artifact URI.
 Fetch and run inference locally:
 
 ```bash
@@ -156,7 +156,7 @@ environment variables — no SageMaker SDK call inside the container:
 | `SM_OUTPUT_DATA_DIR` | Files written here get packaged into `output.tar.gz` | `metrics.json` |
 | stdout | Lines matching `metric_definitions` regex become CloudWatch metrics | `test_acc=0.91;` |
 
-Because of the local fallbacks at the top of `main()`, the same `training.py`
+Because of the local fallbacks at the top of `main()`, the same [`training.py`](training.py)
 also runs on a laptop with `python training.py --data-dir ./data`, which makes
 iterating much cheaper than doing every change through a SageMaker job.
 
@@ -173,7 +173,7 @@ iterating much cheaper than doing every change through a SageMaker job.
 
 ## Efficient recipe
 
-- Run `training.py` locally first — the `SM_*` env-var fallbacks let you iterate in ~30 seconds instead of waiting 5 minutes for a container to spin up.
-- Upload the dataset once with `prepare_data.py`. Every training job just mounts that S3 prefix.
+- Run [`training.py`](training.py) locally first — the `SM_*` env-var fallbacks let you iterate in ~30 seconds instead of waiting 5 minutes for a container to spin up.
+- Upload the dataset once with [`prepare_data.py`](prepare_data.py). Every training job just mounts that S3 prefix.
 - Pick the right instance. `ml.g4dn.xlarge` (~$0.75/hr) is enough for FashionMNIST. Avoid `ml.p3.*` / `ml.p4d.*` for toy examples.
 - Use `--no-wait` once it's working. The launcher returns immediately and you watch progress in the SageMaker console.
