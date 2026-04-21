@@ -1,1 +1,4 @@
-torchvision
+# Pinned to match the torch 2.3.0 that ships in the PyTorch 2.3.0 training DLC.
+# An unpinned `torchvision` would install the latest wheel and break ABI
+# against the pre-installed torch inside the container.
+torchvision==0.18.0
