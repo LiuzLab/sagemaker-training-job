@@ -171,6 +171,23 @@ iterating much cheaper than doing every change through a SageMaker job.
 | `inference.py` on the saved artifact | PASS — 13/16 correct |
 | `ModelTrainer` dry-construct + DLC image resolve | PASS |
 
+## Smoke test
+
+`scripts/smoke_test.sh` runs everything locally in ~1 minute and prints a
+PASS/FAIL summary. It does **not** submit a SageMaker job — it only exercises
+the code paths you can verify without AWS compute:
+
+```bash
+bash scripts/smoke_test.sh
+```
+
+What it checks: `py_compile` on every `.py` file, importing each module,
+`--help` on every CLI, a 1-epoch CPU training run against a freshly downloaded
+FashionMNIST, that `model.pt` + `classes.json` were written, an
+`inference.py` round-trip against the produced artifact, and a dry-construct
+of the SageMaker `ModelTrainer` (imports + DLC image resolution, no API call).
+Non-zero exit on any failure.
+
 ## Efficient recipe
 
 - Run [`training.py`](training.py) locally first — the `SM_*` env-var fallbacks let you iterate in ~30 seconds instead of waiting 5 minutes for a container to spin up.
