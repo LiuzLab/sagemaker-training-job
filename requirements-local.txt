@@ -1,0 +1,8 @@
+# Host-side deps for launch_training.py, prepare_data.py, inference.py.
+# The container's own deps live in requirements.txt (auto-installed by the DLC).
+# torch / torchvision are pinned to the DLC versions so local inference loads
+# the same state_dict the job produced without a version-skew warning.
+boto3
+sagemaker>=3.0
+torch==2.3.0
+torchvision==0.18.0
