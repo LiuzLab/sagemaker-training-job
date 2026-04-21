@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 # Local end-to-end smoke test. Does NOT submit a SageMaker training job.
 #
-# Verifies: syntax, module imports, each CLI's --help, a 1-epoch CPU run of
-# training.py against a freshly-downloaded FashionMNIST, inference.py against
-# the produced artifact, and a dry-construct of the SageMaker ModelTrainer.
+# Verifies: host-side deps, syntax, module imports, each CLI's --help, a
+# 1-epoch CPU run of training.py against a freshly-downloaded FashionMNIST,
+# inference.py against the produced artifact, and a dry-construct of the
+# SageMaker ModelTrainer.
+#
+# Runs anywhere the README prerequisites are installed (SageMaker Studio,
+# a laptop with `pip install -r requirements.txt`, CI, etc.). No AWS
+# credentials required — the dry-construct only resolves a DLC image URI.
 
 set -u
 
@@ -13,7 +18,6 @@ trap 'rm -rf "$TMP_DIR"' EXIT
 
 PASSED=0
 FAILED=0
-SKIPPED=0
 RESULTS=()
 
 record() {
@@ -22,7 +26,6 @@ record() {
     case "$status" in
         PASS) PASSED=$((PASSED + 1)) ;;
         FAIL) FAILED=$((FAILED + 1)) ;;
-        SKIP) SKIPPED=$((SKIPPED + 1)) ;;
     esac
 }
 
@@ -39,6 +42,33 @@ run_check() {
 cd "$REPO_ROOT"
 
 PY_FILES=(training.py inference.py launch_training.py prepare_data.py)
+
+# 0. Preflight: fail fast with an actionable hint if host-side deps are missing.
+#    These are the prerequisites from README.md — without them later checks
+#    produce confusing errors. `sagemaker.core` only exists in SDK v3.
+if ! python - <<'PY'
+import importlib.util
+import sys
+
+
+def have(mod: str) -> bool:
+    try:
+        return importlib.util.find_spec(mod) is not None
+    except (ImportError, ValueError):
+        return False
+
+
+missing = [m for m in ("torch", "torchvision", "boto3") if not have(m)]
+if not have("sagemaker.core"):
+    missing.append("sagemaker>=3.0")
+if missing:
+    print("Missing host-side dependencies: " + ", ".join(missing), file=sys.stderr)
+    print("Install with:  pip install -r requirements.txt", file=sys.stderr)
+    sys.exit(1)
+PY
+then
+    exit 1
+fi
 
 # 1. Syntax check
 run_check "py_compile all .py files" python -m py_compile "${PY_FILES[@]}"
@@ -89,18 +119,18 @@ run_check "inference.py on saved artifact" \
     python inference.py --model-dir "$MODEL" --data-dir "$DATA" --n 8
 
 # 7. Dry-construct the SageMaker ModelTrainer (imports + image resolve, no API call).
-#    Skip gracefully if sagemaker v3 / boto3 aren't installed in this env.
+#    Falls back to us-east-1 when no AWS region is configured so the DLC image
+#    lookup works on a laptop without `aws configure`. The resolved URI is a
+#    public ECR path — no credentials needed.
+: "${AWS_DEFAULT_REGION:=${AWS_REGION:-us-east-1}}"
+export AWS_DEFAULT_REGION
 run_check "ModelTrainer dry-construct" python <<'PY'
-import importlib, sys
-try:
-    import boto3
-    import sagemaker.core.helper.session_helper as smh
-    from sagemaker.core.image_uris import retrieve
-    from sagemaker.core.shapes.shapes import OutputDataConfig, StoppingCondition, Tag
-    from sagemaker.core.training.configs import Compute, InputData, SourceCode
-    from sagemaker.train.model_trainer import ModelTrainer
-except ModuleNotFoundError as e:
-    print(f"skip: {e}"); sys.exit(0)
+import boto3
+import sagemaker.core.helper.session_helper as smh
+from sagemaker.core.image_uris import retrieve
+from sagemaker.core.shapes.shapes import OutputDataConfig, StoppingCondition, Tag
+from sagemaker.core.training.configs import Compute, InputData, SourceCode
+from sagemaker.train.model_trainer import ModelTrainer
 
 session = smh.Session(boto_session=boto3.Session())
 region = session.boto_region_name
@@ -126,6 +156,6 @@ echo
 echo "────────── SUMMARY ──────────"
 for r in "${RESULTS[@]}"; do echo "$r"; done
 echo "─────────────────────────────"
-echo "passed=$PASSED  failed=$FAILED  skipped=$SKIPPED"
+echo "passed=$PASSED  failed=$FAILED"
 
 if (( FAILED > 0 )); then exit 1; fi
