@@ -16,7 +16,7 @@ Two launch paths are covered:
 | [`inference.py`](inference.py) | Loads the produced `model.tar.gz` and predicts on held-out samples. |
 | [`launch_training.py`](launch_training.py) | Submits the job using the SageMaker SDK v3 `ModelTrainer` API. |
 | [`prepare_data.py`](prepare_data.py) | Downloads FashionMNIST locally and uploads it to S3 once. |
-| [`requirements.txt`](requirements.txt) | Extra pip packages installed in the container before training runs. |
+| [`requirements.txt`](requirements.txt) | Single pinned dep list — used both locally and inside the training container. |
 
 ## S3 layout
 
@@ -51,7 +51,7 @@ so SageMaker keeps local `/opt/ml/checkpoints` in sync with S3.
 ## Prerequisites
 
 ```bash
-pip install "sagemaker>=3.0" boto3 torch torchvision
+pip install -r requirements.txt
 aws configure   # only needed outside AWS
 ```
 

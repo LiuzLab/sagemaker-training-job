@@ -1,1 +1,7 @@
-torchvision
+--extra-index-url https://download.pytorch.org/whl/cu121
+# Training + inference
+torch>=2.3.0,<2.5.0
+torchvision>=0.18.0,<0.20.0
+# Launch-side (SageMaker SDK v3 + AWS)
+boto3
+sagemaker>=3.0
