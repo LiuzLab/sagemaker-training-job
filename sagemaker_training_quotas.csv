@@ -1,0 +1,425 @@
+QuotaName,Value,Unit
+ml.c4.xlarge for spot training job usage,20.0,None
+ml.r5d.xlarge for training job usage,0.0,None
+ml.r5d.24xlarge for spot training job usage,0.0,None
+ml.c4.xlarge for training job usage,30.0,None
+ml.trn1n.32xlarge for training job usage,0.0,None
+ml.c4.8xlarge for training warm pool usage,0.0,None
+ml.m5.2xlarge for spot training job usage,20.0,None
+ml.r7i.large for spot training job usage,30.0,None
+ml.g5.4xlarge for spot training job usage,1.0,None
+ml.g4dn.16xlarge for training job usage,1.0,None
+ml.c5.2xlarge for training job usage,30.0,None
+ml.g4dn.2xlarge for training warm pool usage,0.0,None
+ml.r5d.24xlarge for training warm pool usage,0.0,None
+ml.m5.xlarge for training job usage,30.0,None
+ml.p6-b200.48xlarge for training warm pool usage,0.0,None
+ml.r5d.large for training job usage,0.0,None
+ml.c5n.9xlarge for spot training job usage,1.0,None
+ml.p6-b200.48xlarge for training job usage,1.0,None
+ml.g5.2xlarge for training warm pool usage,0.0,None
+ml.g5.16xlarge for spot training job usage,1.0,None
+ml.g7e.48xlarge for training warm pool usage,0.0,None
+ml.g6.2xlarge for spot training job usage,2.0,None
+ml.m7i.24xlarge for spot training job usage,8.0,None
+ml.c6i.2xlarge for spot training job usage,20.0,None
+ml.g6e.8xlarge for training warm pool usage,0.0,None
+ml.t3.xlarge for training warm pool usage,1.0,None
+ml.c7i.xlarge for spot training job usage,30.0,None
+ml.r7i.2xlarge for training job usage,30.0,None
+ml.trn1.2xlarge for training warm pool usage,0.0,None
+ml.r7i.16xlarge for training job usage,8.0,None
+ml.m7i.xlarge for training job usage,30.0,None
+ml.p4de.24xlarge for spot training job usage,20.0,None
+ml.t3.large for training warm pool usage,1.0,None
+ml.m7i.4xlarge for training job usage,8.0,None
+ml.m6i.8xlarge for training warm pool usage,0.0,None
+ml.c7i.12xlarge for training warm pool usage,8.0,None
+ml.c6i.32xlarge for training job usage,8.0,None
+ml.m4.16xlarge for training warm pool usage,0.0,None
+ml.r5.24xlarge for training job usage,1.0,None
+ml.m6i.16xlarge for training warm pool usage,0.0,None
+ml.c4.4xlarge for training job usage,30.0,None
+ml.g5.12xlarge for training job usage,1.0,None
+ml.m5.large for spot training job usage,20.0,None
+ml.p3dn.24xlarge for training job usage,0.0,None
+ml.c6i.4xlarge for spot training job usage,5.0,None
+Number of ml.p5.4xlarge instances in reserved capacity across training plans per Region,256.0,None
+ml.g6.2xlarge for training job usage,0.0,None
+ml.p3.2xlarge for spot training job usage,1.0,None
+ml.r5d.12xlarge for spot training job usage,0.0,None
+ml.g6.16xlarge for training warm pool usage,0.0,None
+Number of ml.p6-b200.48xlarge instances in reserved capacity across training plans per Region,8.0,None
+ml.g7e.2xlarge for training warm pool usage,0.0,None
+ml.c5n.xlarge for training job usage,1.0,None
+ml.r5d.16xlarge for training warm pool usage,0.0,None
+ml.p5.48xlarge for spot training job usage,20.0,None
+ml.r5.large for training job usage,1.0,None
+ml.m7i.16xlarge for training warm pool usage,8.0,None
+ml.g5.8xlarge for spot training job usage,1.0,None
+ml.m7i.48xlarge for training warm pool usage,8.0,None
+ml.m5.24xlarge for training warm pool usage,0.0,None
+ml.r5d.xlarge for spot training job usage,0.0,None
+ml.c6i.8xlarge for training job usage,8.0,None
+ml.m5.24xlarge for training job usage,3.0,None
+ml.c6i.24xlarge for training job usage,8.0,None
+ml.g7e.48xlarge for spot training job usage,0.0,None
+ml.c6i.24xlarge for training warm pool usage,0.0,None
+ml.r7i.2xlarge for training warm pool usage,30.0,None
+ml.p3.16xlarge for spot training job usage,0.0,None
+ml.r7i.12xlarge for training job usage,8.0,None
+ml.c7i.12xlarge for training job usage,8.0,None
+ml.g6.48xlarge for training job usage,0.0,None
+ml.c5.4xlarge for training warm pool usage,0.0,None
+ml.c5n.2xlarge for training job usage,1.0,None
+ml.r7i.large for training warm pool usage,30.0,None
+ml.m7i.2xlarge for training job usage,30.0,None
+ml.g5.24xlarge for training warm pool usage,0.0,None
+ml.g6.24xlarge for spot training job usage,2.0,None
+Number of ml.trn1.32xlarge instances in reserved capacity across training plans per Region,256.0,None
+ml.t3.large for spot training job usage,1.0,None
+ml.c6i.12xlarge for training job usage,8.0,None
+ml.r7i.48xlarge for training warm pool usage,8.0,None
+ml.m4.4xlarge for training warm pool usage,0.0,None
+ml.m6i.xlarge for spot training job usage,20.0,None
+ml.g6e.2xlarge for training warm pool usage,0.0,None
+ml.m4.4xlarge for training job usage,15.0,None
+ml.g6e.12xlarge for spot training job usage,0.0,None
+ml.r5.12xlarge for training job usage,1.0,None
+ml.c6i.12xlarge for spot training job usage,5.0,None
+ml.m6i.large for training warm pool usage,0.0,None
+ml.r5.16xlarge for training warm pool usage,1.0,None
+ml.m5.large for training warm pool usage,0.0,None
+ml.c4.8xlarge for spot training job usage,16.0,None
+ml.c6i.8xlarge for training warm pool usage,0.0,None
+ml.g7e.8xlarge for spot training job usage,0.0,None
+ml.r7i.12xlarge for spot training job usage,8.0,None
+ml.m6i.4xlarge for training warm pool usage,0.0,None
+ml.g6e.12xlarge for training job usage,0.0,None
+ml.p5en.48xlarge for spot training job usage,1.0,None
+ml.g7e.24xlarge for training warm pool usage,0.0,None
+ml.g6.4xlarge for training job usage,0.0,None
+ml.p4de.24xlarge for training warm pool usage,0.0,None
+ml.c5.9xlarge for spot training job usage,5.0,None
+ml.p5.48xlarge for training job usage,10.0,None
+ml.c5.xlarge for spot training job usage,20.0,None
+ml.m4.xlarge for spot training job usage,20.0,None
+ml.m7i.12xlarge for training job usage,8.0,None
+ml.c7i.4xlarge for spot training job usage,8.0,None
+ml.c7i.48xlarge for spot training job usage,8.0,None
+ml.r7i.large for training job usage,30.0,None
+ml.c5n.9xlarge for training job usage,1.0,None
+ml.g4dn.4xlarge for training job usage,1.0,None
+ml.c7i.8xlarge for training warm pool usage,8.0,None
+ml.g4dn.xlarge for spot training job usage,1.0,None
+ml.c7i.8xlarge for spot training job usage,8.0,None
+ml.c7i.24xlarge for training warm pool usage,8.0,None
+ml.g7e.4xlarge for spot training job usage,0.0,None
+ml.g7e.48xlarge for training job usage,0.0,None
+ml.r5d.8xlarge for spot training job usage,0.0,None
+ml.m6i.16xlarge for training job usage,3.0,None
+ml.g5.xlarge for spot training job usage,1.0,None
+ml.m5.4xlarge for spot training job usage,10.0,None
+ml.g5.12xlarge for spot training job usage,1.0,None
+ml.c6i.12xlarge for training warm pool usage,0.0,None
+ml.g6e.16xlarge for training warm pool usage,0.0,None
+ml.g6e.24xlarge for spot training job usage,0.0,None
+ml.g4dn.4xlarge for spot training job usage,1.0,None
+ml.c7i.4xlarge for training job usage,8.0,None
+ml.g7e.2xlarge for training job usage,0.0,None
+ml.g6e.12xlarge for training warm pool usage,0.0,None
+ml.g5.2xlarge for training job usage,1.0,None
+ml.m6i.2xlarge for training warm pool usage,0.0,None
+ml.p6e-gb200.36xlarge for training job usage,1.0,None
+ml.p4d.24xlarge for training job usage,10.0,None
+ml.m6i.xlarge for training job usage,30.0,None
+ml.g7e.12xlarge for training job usage,0.0,None
+ml.m7i.2xlarge for spot training job usage,30.0,None
+ml.m7i.xlarge for spot training job usage,30.0,None
+ml.c4.2xlarge for training job usage,30.0,None
+ml.m4.xlarge for training job usage,30.0,None
+ml.g5.48xlarge for spot training job usage,0.0,None
+ml.g6.24xlarge for training job usage,0.0,None
+ml.c6i.32xlarge for spot training job usage,5.0,None
+ml.p5.4xlarge for spot training job usage,0.0,None
+ml.m4.xlarge for training warm pool usage,0.0,None
+ml.c5n.xlarge for spot training job usage,1.0,None
+ml.g6e.xlarge for training warm pool usage,0.0,None
+ml.c5.9xlarge for training job usage,8.0,None
+ml.g6e.xlarge for training job usage,0.0,None
+ml.g6.48xlarge for training warm pool usage,0.0,None
+ml.g5.2xlarge for spot training job usage,1.0,None
+ml.g4dn.8xlarge for spot training job usage,1.0,None
+ml.g4dn.8xlarge for training warm pool usage,0.0,None
+ml.c6i.xlarge for training warm pool usage,0.0,None
+ml.r5.4xlarge for spot training job usage,1.0,None
+ml.p3dn.24xlarge for spot training job usage,0.0,None
+ml.m6i.4xlarge for training job usage,30.0,None
+ml.m4.10xlarge for training warm pool usage,0.0,None
+ml.m4.4xlarge for spot training job usage,10.0,None
+ml.g6.8xlarge for spot training job usage,2.0,None
+ml.r5.8xlarge for spot training job usage,1.0,None
+ml.m4.10xlarge for training job usage,8.0,None
+ml.r5d.24xlarge for training job usage,0.0,None
+ml.g7e.8xlarge for training warm pool usage,0.0,None
+ml.r7i.12xlarge for training warm pool usage,8.0,None
+ml.r5d.16xlarge for training job usage,0.0,None
+ml.p5.4xlarge for training job usage,10.0,None
+ml.g5.24xlarge for spot training job usage,0.0,None
+ml.g6e.24xlarge for training warm pool usage,0.0,None
+ml.c5.18xlarge for training warm pool usage,0.0,None
+ml.g7e.12xlarge for training warm pool usage,0.0,None
+ml.p3.8xlarge for training job usage,0.0,None
+ml.m5.large for training job usage,30.0,None
+ml.g4dn.xlarge for training job usage,1.0,None
+ml.g5.4xlarge for training warm pool usage,0.0,None
+ml.r5.large for spot training job usage,1.0,None
+ml.t3.2xlarge for spot training job usage,1.0,None
+ml.m6i.16xlarge for spot training job usage,3.0,None
+ml.m4.10xlarge for spot training job usage,5.0,None
+ml.c5.18xlarge for spot training job usage,5.0,None
+ml.m5.4xlarge for training warm pool usage,0.0,None
+ml.m4.16xlarge for spot training job usage,5.0,None
+ml.g6.xlarge for spot training job usage,2.0,None
+ml.c5.9xlarge for training warm pool usage,0.0,None
+ml.c4.xlarge for training warm pool usage,0.0,None
+ml.c5.18xlarge for training job usage,8.0,None
+ml.m5.4xlarge for training job usage,30.0,None
+ml.g6e.2xlarge for spot training job usage,0.0,None
+ml.c7i.48xlarge for training warm pool usage,8.0,None
+ml.r5d.large for spot training job usage,0.0,None
+ml.g6.xlarge for training job usage,0.0,None
+ml.g6e.8xlarge for training job usage,0.0,None
+ml.p5en.48xlarge for training warm pool usage,0.0,None
+ml.g6.12xlarge for training job usage,0.0,None
+Number of ml.p5en.48xlarge instances in reserved capacity across training plans per Region,256.0,None
+ml.p3.8xlarge for training warm pool usage,0.0,None
+ml.c7i.24xlarge for training job usage,8.0,None
+ml.r5.12xlarge for training warm pool usage,1.0,None
+ml.g6e.16xlarge for training job usage,0.0,None
+ml.g7e.24xlarge for training job usage,0.0,None
+ml.c5n.18xlarge for training warm pool usage,0.0,None
+ml.trn1n.32xlarge for spot training job usage,0.0,None
+ml.m7i.large for training warm pool usage,30.0,None
+ml.c5.4xlarge for spot training job usage,5.0,None
+ml.g6e.24xlarge for training job usage,0.0,None
+ml.g4dn.12xlarge for training job usage,1.0,None
+ml.g5.48xlarge for training job usage,0.0,None
+ml.r7i.8xlarge for training warm pool usage,8.0,None
+ml.p5en.48xlarge for training job usage,1.0,None
+ml.m6i.large for training job usage,30.0,None
+ml.r5d.2xlarge for training job usage,0.0,None
+ml.m7i.24xlarge for training warm pool usage,8.0,None
+ml.r7i.16xlarge for training warm pool usage,8.0,None
+ml.c7i.16xlarge for training warm pool usage,8.0,None
+ml.r5.8xlarge for training warm pool usage,1.0,None
+ml.r5d.2xlarge for spot training job usage,0.0,None
+ml.c6i.4xlarge for training job usage,8.0,None
+ml.m5.2xlarge for training job usage,30.0,None
+ml.g7e.12xlarge for spot training job usage,0.0,None
+ml.c4.2xlarge for spot training job usage,20.0,None
+ml.g5.12xlarge for training warm pool usage,0.0,None
+ml.r7i.48xlarge for training job usage,8.0,None
+ml.g7e.24xlarge for spot training job usage,0.0,None
+ml.r7i.8xlarge for training job usage,8.0,None
+ml.g4dn.16xlarge for spot training job usage,1.0,None
+ml.m6i.24xlarge for training job usage,3.0,None
+ml.m7i.12xlarge for spot training job usage,8.0,None
+ml.r5d.4xlarge for training warm pool usage,0.0,None
+ml.r5.xlarge for training job usage,1.0,None
+ml.m6i.8xlarge for training job usage,5.0,None
+ml.g7e.8xlarge for training job usage,0.0,None
+ml.p5e.48xlarge for training warm pool usage,0.0,None
+ml.g6.xlarge for training warm pool usage,0.0,None
+ml.trn1n.32xlarge for training warm pool usage,0.0,None
+ml.g5.24xlarge for training job usage,0.0,None
+Number of ml.p4de.24xlarge instances in reserved capacity across training plans per Region,256.0,None
+ml.m7i.large for spot training job usage,30.0,None
+ml.r5d.4xlarge for training job usage,0.0,None
+ml.p5.4xlarge for training warm pool usage,0.0,None
+ml.r7i.4xlarge for spot training job usage,8.0,None
+ml.m5.12xlarge for spot training job usage,3.0,None
+ml.c7i.8xlarge for training job usage,8.0,None
+ml.c5n.18xlarge for training job usage,1.0,None
+ml.c6i.16xlarge for spot training job usage,5.0,None
+ml.g6.16xlarge for spot training job usage,2.0,None
+ml.g6.4xlarge for spot training job usage,2.0,None
+Number of ml.p4d.24xlarge instances in reserved capacity across training plans per Region,256.0,None
+ml.c6i.xlarge for training job usage,30.0,None
+ml.c7i.large for training job usage,30.0,None
+Number of ml.p5.48xlarge instances in reserved capacity across training plans per Region,256.0,None
+ml.p3.16xlarge for training job usage,0.0,None
+ml.g6e.2xlarge for training job usage,0.0,None
+ml.g4dn.12xlarge for training warm pool usage,0.0,None
+ml.c4.2xlarge for training warm pool usage,0.0,None
+ml.g6e.4xlarge for training job usage,0.0,None
+ml.r5d.12xlarge for training warm pool usage,0.0,None
+ml.c5.4xlarge for training job usage,8.0,None
+ml.m6i.2xlarge for spot training job usage,20.0,None
+ml.m7i.4xlarge for spot training job usage,8.0,None
+ml.r5d.large for training warm pool usage,0.0,None
+ml.c7i.2xlarge for training warm pool usage,30.0,None
+ml.g4dn.16xlarge for training warm pool usage,0.0,None
+ml.c5n.2xlarge for training warm pool usage,0.0,None
+ml.m6i.2xlarge for training job usage,30.0,None
+ml.m4.2xlarge for training warm pool usage,0.0,None
+ml.c4.4xlarge for spot training job usage,20.0,None
+ml.g6.8xlarge for training warm pool usage,0.0,None
+ml.trn1.32xlarge for training job usage,0.0,None
+ml.c6i.xlarge for spot training job usage,20.0,None
+ml.c6i.24xlarge for spot training job usage,5.0,None
+ml.g5.4xlarge for training job usage,1.0,None
+ml.m7i.2xlarge for training warm pool usage,30.0,None
+ml.m6i.4xlarge for spot training job usage,10.0,None
+ml.r5.2xlarge for training job usage,1.0,None
+ml.p6e-gb200.36xlarge for training warm pool usage,0.0,None
+ml.r5.2xlarge for spot training job usage,1.0,None
+ml.g6.16xlarge for training job usage,0.0,None
+ml.r5.12xlarge for spot training job usage,1.0,None
+ml.t3.2xlarge for training warm pool usage,1.0,None
+ml.m7i.4xlarge for training warm pool usage,8.0,None
+ml.g5.8xlarge for training warm pool usage,0.0,None
+ml.g4dn.2xlarge for training job usage,1.0,None
+ml.c6i.16xlarge for training job usage,8.0,None
+ml.p4d.24xlarge for spot training job usage,20.0,None
+ml.m6i.24xlarge for spot training job usage,2.0,None
+ml.m6i.8xlarge for spot training job usage,5.0,None
+ml.m6i.32xlarge for training warm pool usage,0.0,None
+ml.m7i.xlarge for training warm pool usage,30.0,None
+ml.p5.48xlarge for training warm pool usage,0.0,None
+ml.r5.large for training warm pool usage,1.0,None
+ml.p3.16xlarge for training warm pool usage,0.0,None
+ml.r7i.24xlarge for spot training job usage,8.0,None
+ml.r7i.2xlarge for spot training job usage,30.0,None
+ml.g4dn.4xlarge for training warm pool usage,0.0,None
+ml.c7i.2xlarge for training job usage,30.0,None
+ml.m4.2xlarge for training job usage,30.0,None
+ml.t3.xlarge for training job usage,1.0,None
+ml.trn1.2xlarge for training job usage,1.0,None
+ml.m5.12xlarge for training job usage,5.0,None
+ml.m5.xlarge for spot training job usage,20.0,None
+ml.m4.16xlarge for training job usage,8.0,None
+ml.r5d.2xlarge for training warm pool usage,0.0,None
+ml.g7e.4xlarge for training warm pool usage,0.0,None
+ml.t3.large for training job usage,1.0,None
+ml.g5.xlarge for training job usage,1.0,None
+ml.g4dn.2xlarge for spot training job usage,1.0,None
+ml.p5e.48xlarge for training job usage,10.0,None
+ml.m5.2xlarge for training warm pool usage,0.0,None
+ml.c7i.24xlarge for spot training job usage,8.0,None
+ml.p6-b200.48xlarge for spot training job usage,0.0,None
+ml.r5.16xlarge for training job usage,1.0,None
+ml.g6.4xlarge for training warm pool usage,0.0,None
+ml.m5.xlarge for training warm pool usage,0.0,None
+ml.g6e.4xlarge for training warm pool usage,0.0,None
+ml.c7i.12xlarge for spot training job usage,8.0,None
+ml.r7i.24xlarge for training warm pool usage,8.0,None
+ml.r5.16xlarge for spot training job usage,1.0,None
+ml.c7i.48xlarge for training job usage,8.0,None
+Number of ml.p6e-gb200.36xlarge instances in reserved capacity across training plans per Region,18.0,None
+ml.trn1.32xlarge for spot training job usage,0.0,None
+ml.g4dn.xlarge for training warm pool usage,0.0,None
+ml.r5.4xlarge for training warm pool usage,1.0,None
+ml.g6e.xlarge for spot training job usage,0.0,None
+ml.g6.12xlarge for spot training job usage,2.0,None
+ml.c6i.4xlarge for training warm pool usage,0.0,None
+ml.p3.2xlarge for training warm pool usage,0.0,None
+ml.g6.12xlarge for training warm pool usage,0.0,None
+ml.c6i.16xlarge for training warm pool usage,0.0,None
+ml.c7i.xlarge for training job usage,30.0,None
+ml.m5.24xlarge for spot training job usage,2.0,None
+ml.g4dn.12xlarge for spot training job usage,1.0,None
+ml.g4dn.8xlarge for training job usage,1.0,None
+ml.r5d.16xlarge for spot training job usage,0.0,None
+ml.g6e.4xlarge for spot training job usage,0.0,None
+ml.r5.xlarge for spot training job usage,1.0,None
+ml.r5d.12xlarge for training job usage,0.0,None
+ml.m6i.12xlarge for spot training job usage,3.0,None
+ml.m4.2xlarge for spot training job usage,20.0,None
+ml.trn1.2xlarge for spot training job usage,0.0,None
+ml.r5d.8xlarge for training job usage,0.0,None
+ml.g6.48xlarge for spot training job usage,2.0,None
+ml.m7i.8xlarge for training warm pool usage,8.0,None
+ml.r7i.4xlarge for training job usage,8.0,None
+ml.m7i.48xlarge for training job usage,8.0,None
+ml.p4d.24xlarge for training warm pool usage,0.0,None
+ml.m6i.12xlarge for training job usage,5.0,None
+ml.r5.xlarge for training warm pool usage,1.0,None
+ml.c6i.8xlarge for spot training job usage,5.0,None
+ml.g6e.48xlarge for training job usage,0.0,None
+ml.g6e.16xlarge for spot training job usage,0.0,None
+ml.g6.24xlarge for training warm pool usage,0.0,None
+ml.c7i.16xlarge for spot training job usage,8.0,None
+ml.c4.8xlarge for training job usage,16.0,None
+Number of ml.p5e.48xlarge instances in reserved capacity across training plans per Region,256.0,None
+ml.g7e.2xlarge for spot training job usage,0.0,None
+ml.c5.xlarge for training job usage,30.0,None
+ml.r7i.8xlarge for spot training job usage,8.0,None
+ml.c7i.4xlarge for training warm pool usage,8.0,None
+ml.r5.2xlarge for training warm pool usage,1.0,None
+ml.m6i.12xlarge for training warm pool usage,0.0,None
+ml.r7i.xlarge for training warm pool usage,30.0,None
+ml.g6.2xlarge for training warm pool usage,0.0,None
+ml.g5.16xlarge for training warm pool usage,0.0,None
+ml.m7i.8xlarge for training job usage,8.0,None
+ml.c5.2xlarge for training warm pool usage,0.0,None
+ml.g7e.4xlarge for training job usage,0.0,None
+ml.r7i.16xlarge for spot training job usage,8.0,None
+ml.m7i.24xlarge for training job usage,8.0,None
+ml.r5d.4xlarge for spot training job usage,0.0,None
+ml.trn1.32xlarge for training warm pool usage,0.0,None
+ml.r5.4xlarge for training job usage,1.0,None
+ml.g5.16xlarge for training job usage,1.0,None
+ml.c5n.xlarge for training warm pool usage,0.0,None
+ml.m5.12xlarge for training warm pool usage,0.0,None
+ml.m6i.24xlarge for training warm pool usage,0.0,None
+ml.r7i.xlarge for spot training job usage,30.0,None
+ml.m7i.16xlarge for training job usage,8.0,None
+ml.c6i.32xlarge for training warm pool usage,0.0,None
+ml.g6e.8xlarge for spot training job usage,0.0,None
+ml.r7i.4xlarge for training warm pool usage,8.0,None
+ml.g5.xlarge for training warm pool usage,0.0,None
+ml.m7i.48xlarge for spot training job usage,8.0,None
+ml.m6i.32xlarge for spot training job usage,2.0,None
+ml.g6.8xlarge for training job usage,0.0,None
+ml.c7i.xlarge for training warm pool usage,30.0,None
+ml.r5.8xlarge for training job usage,1.0,None
+ml.m6i.large for spot training job usage,20.0,None
+ml.p4de.24xlarge for training job usage,10.0,None
+ml.c5.2xlarge for spot training job usage,20.0,None
+ml.g6e.48xlarge for training warm pool usage,0.0,None
+ml.p3dn.24xlarge for training warm pool usage,0.0,None
+ml.r5d.xlarge for training warm pool usage,0.0,None
+ml.g5.8xlarge for training job usage,1.0,None
+ml.m7i.16xlarge for spot training job usage,8.0,None
+ml.p3.8xlarge for spot training job usage,0.0,None
+ml.r5.24xlarge for spot training job usage,1.0,None
+ml.c7i.16xlarge for training job usage,8.0,None
+ml.m6i.xlarge for training warm pool usage,0.0,None
+ml.c7i.large for training warm pool usage,30.0,None
+ml.r5d.8xlarge for training warm pool usage,0.0,None
+ml.c5n.18xlarge for spot training job usage,1.0,None
+ml.g6e.48xlarge for spot training job usage,0.0,None
+ml.c5.xlarge for training warm pool usage,0.0,None
+ml.r5.24xlarge for training warm pool usage,1.0,None
+ml.p3.2xlarge for training job usage,1.0,None
+ml.t3.2xlarge for training job usage,1.0,None
+ml.c5n.9xlarge for training warm pool usage,0.0,None
+ml.c5n.2xlarge for spot training job usage,1.0,None
+ml.m7i.large for training job usage,30.0,None
+ml.r7i.48xlarge for spot training job usage,8.0,None
+ml.c6i.2xlarge for training warm pool usage,0.0,None
+ml.c6i.2xlarge for training job usage,30.0,None
+ml.t3.xlarge for spot training job usage,1.0,None
+ml.c4.4xlarge for training warm pool usage,0.0,None
+ml.c7i.large for spot training job usage,30.0,None
+ml.m7i.12xlarge for training warm pool usage,8.0,None
+ml.c5n.4xlarge for training job usage,1.0,None
+ml.c5n.4xlarge for spot training job usage,1.0,None
+ml.r7i.xlarge for training job usage,30.0,None
+ml.g5.48xlarge for training warm pool usage,0.0,None
+ml.c7i.2xlarge for spot training job usage,30.0,None
+ml.c5n.4xlarge for training warm pool usage,0.0,None
+ml.m7i.8xlarge for spot training job usage,8.0,None
+ml.m6i.32xlarge for training job usage,3.0,None
+ml.r7i.24xlarge for training job usage,8.0,None
