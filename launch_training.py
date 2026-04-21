@@ -27,9 +27,21 @@ def resolve_role(cli_role: str | None) -> str:
         return cli_role
     if os.environ.get("SM_TRAINING_ROLE_ARN"):
         return os.environ["SM_TRAINING_ROLE_ARN"]
+    # SageMaker SDK v3 dropped the top-level `sagemaker.get_execution_role()`
+    # helper, so fall back to STS. Inside Studio / a notebook the caller is
+    # already the execution role (assumed via STS), and we just need to
+    # rewrite the assumed-role ARN back to the plain role ARN that
+    # CreateTrainingJob expects.
     try:
-        # Inside Studio / a SageMaker notebook this returns the attached role.
-        return sagemaker.get_execution_role()
+        import boto3
+        arn = boto3.client("sts").get_caller_identity()["Arn"]
+        if ":assumed-role/" in arn:
+            account = arn.split(":")[4]
+            role_name = arn.split("assumed-role/")[1].split("/")[0]
+            return f"arn:aws:iam::{account}:role/{role_name}"
+        if ":role/" in arn:
+            return arn
+        raise ValueError(f"unsupported caller ARN: {arn}")
     except Exception as e:
         raise SystemExit(
             "Could not resolve an IAM role. Pass --role-arn or export "
