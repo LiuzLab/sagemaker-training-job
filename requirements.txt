@@ -1,4 +1,7 @@
-# Pinned to match the torch 2.3.0 that ships in the PyTorch 2.3.0 training DLC.
-# An unpinned `torchvision` would install the latest wheel and break ABI
-# against the pre-installed torch inside the container.
-torchvision==0.18.0
+--extra-index-url https://download.pytorch.org/whl/cu121
+# Training + inference
+torch>=2.3.0,<2.5.0
+torchvision>=0.18.0,<0.20.0
+# Launch-side (SageMaker SDK v3 + AWS)
+boto3
+sagemaker>=3.0
