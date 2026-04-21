@@ -17,6 +17,28 @@ Two launch paths are covered:
 | [`launch_training.py`](launch_training.py) | Submits the job using the SageMaker SDK v3 `ModelTrainer` API. |
 | [`prepare_data.py`](prepare_data.py) | Downloads FashionMNIST locally and uploads it to S3 once. |
 | [`requirements.txt`](requirements.txt) | Extra pip packages installed in the container before training runs. |
+| [`sagemaker_training_quotas.csv`](sagemaker_training_quotas.csv) | Snapshot of account-level SageMaker training-related Service Quotas. |
+
+## SageMaker training quotas snapshot
+
+[`sagemaker_training_quotas.csv`](sagemaker_training_quotas.csv) is a quick
+reference of available SageMaker training quotas for choosing
+`--instance-type` in [`launch_training.py`](launch_training.py).
+
+- Columns: `QuotaName`, `Value`, `Unit`
+- Includes quota families for:
+  - Training job usage (on-demand)
+  - Spot training job usage
+  - Training warm pool usage
+  - Reserved-capacity training plan quotas (`Number of <instance> instances in reserved capacity`)
+- Covers `ml.c*`, `ml.m*`, `ml.r*`, `ml.g*`, `ml.p*`, and `ml.trn1*` instance
+  families
+
+This file is a point-in-time snapshot (not live). Refresh with:
+
+```bash
+aws service-quotas list-service-quotas --service-code sagemaker
+```
 
 ## S3 layout
 
