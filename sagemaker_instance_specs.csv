@@ -1,0 +1,112 @@
+instance,family,vcpu,ram_gib,gpu_count,gpu_type,gpu_mem_gb_each,network,job_quota,spot_quota,warm_pool_quota,reserved_quota,on_demand_usd_per_hr_us_east_1,spot_usd_per_hr_us_east_1,warm_pool_usd_per_hr_us_east_1,cluster_usd_per_hr_us_east_1,notes
+ml.t3.large,burstable,2,8,0,,,up to 5 Gbps,1,1,1,,0.1000,0.1000,,0.1000,
+ml.t3.xlarge,burstable,4,16,0,,,up to 5 Gbps,1,1,1,,0.2000,0.2000,,0.2000,
+ml.t3.2xlarge,burstable,8,32,0,,,up to 5 Gbps,1,1,1,,0.3990,0.3990,,0.3990,
+ml.m4.xlarge,m4,4,16,0,,,high,30,20,,,0.2400,,,,Broadwell
+ml.m4.2xlarge,m4,8,32,0,,,high,30,20,,,0.4800,,,,Broadwell
+ml.m4.4xlarge,m4,16,64,0,,,high,15,10,,,0.9600,,,,Broadwell
+ml.m4.10xlarge,m4,40,160,0,,,10 Gbps,8,5,,,2.4000,,,,Broadwell
+ml.m4.16xlarge,m4,64,256,0,,,25 Gbps,8,5,,,3.8400,,,,Broadwell
+ml.m5.large,m5,2,8,0,,,up to 10 Gbps,30,20,,,0.1150,,,0.1150,Skylake/Cascade Lake
+ml.m5.xlarge,m5,4,16,0,,,up to 10 Gbps,30,20,,,0.2300,,,0.2300,Skylake/Cascade Lake
+ml.m5.2xlarge,m5,8,32,0,,,up to 10 Gbps,30,20,,,0.4610,,,0.4610,Skylake/Cascade Lake
+ml.m5.4xlarge,m5,16,64,0,,,up to 10 Gbps,30,10,,,0.9220,,,0.9220,Skylake/Cascade Lake
+ml.m5.12xlarge,m5,48,192,0,,,10 Gbps,5,3,,,2.7650,,,2.7650,Skylake/Cascade Lake
+ml.m5.24xlarge,m5,96,384,0,,,25 Gbps,3,2,,,5.5300,,,5.5300,Skylake/Cascade Lake
+ml.m6i.large,m6i,2,8,0,,,up to 12.5 Gbps,30,20,,,0.1150,,,0.1152,Ice Lake
+ml.m6i.xlarge,m6i,4,16,0,,,up to 12.5 Gbps,30,20,,,0.2300,,,0.2304,Ice Lake
+ml.m6i.2xlarge,m6i,8,32,0,,,up to 12.5 Gbps,30,20,,,0.4610,,,0.4608,Ice Lake
+ml.m6i.4xlarge,m6i,16,64,0,,,up to 12.5 Gbps,30,10,,,0.9220,,,0.9216,Ice Lake
+ml.m6i.8xlarge,m6i,32,128,0,,,12.5 Gbps,5,5,,,1.8430,,,1.8432,Ice Lake
+ml.m6i.12xlarge,m6i,48,192,0,,,18.75 Gbps,5,3,,,2.7650,,,2.7648,Ice Lake
+ml.m6i.16xlarge,m6i,64,256,0,,,25 Gbps,3,3,,,3.6860,,,3.6864,Ice Lake
+ml.m6i.24xlarge,m6i,96,384,0,,,37.5 Gbps,3,2,,,5.5300,,,5.5296,Ice Lake
+ml.m6i.32xlarge,m6i,128,512,0,,,50 Gbps,3,2,,,7.3730,,,7.3728,Ice Lake
+ml.m7i.large,m7i,2,8,0,,,up to 12.5 Gbps,30,30,30,,0.1210,,,0.1210,Sapphire Rapids
+ml.m7i.xlarge,m7i,4,16,0,,,up to 12.5 Gbps,30,30,30,,0.2419,,,0.2419,Sapphire Rapids
+ml.m7i.2xlarge,m7i,8,32,0,,,up to 12.5 Gbps,30,30,30,,0.4838,,,0.4838,Sapphire Rapids
+ml.m7i.4xlarge,m7i,16,64,0,,,up to 12.5 Gbps,8,8,8,,0.9677,,,0.9677,Sapphire Rapids
+ml.m7i.8xlarge,m7i,32,128,0,,,12.5 Gbps,8,8,8,,1.9354,,,1.9354,Sapphire Rapids
+ml.m7i.12xlarge,m7i,48,192,0,,,18.75 Gbps,8,8,8,,2.9030,,,2.9030,Sapphire Rapids
+ml.m7i.16xlarge,m7i,64,256,0,,,25 Gbps,8,8,8,,3.8707,,,3.8707,Sapphire Rapids
+ml.m7i.24xlarge,m7i,96,384,0,,,37.5 Gbps,8,8,8,,5.8061,,,5.8061,Sapphire Rapids
+ml.m7i.48xlarge,m7i,192,768,0,,,50 Gbps,8,8,8,,11.6122,,,11.6122,Sapphire Rapids
+ml.c4.xlarge,c4,4,7.5,0,,,high,30,20,,,0.2390,,,,Haswell
+ml.c4.2xlarge,c4,8,15,0,,,high,30,20,,,0.4780,,,,Haswell
+ml.c4.4xlarge,c4,16,30,0,,,high,30,20,,,0.9550,,,,Haswell
+ml.c4.8xlarge,c4,36,60,0,,,10 Gbps,16,16,,,1.9090,,,,Haswell
+ml.c5.xlarge,c5,4,8,0,,,up to 10 Gbps,30,20,,,0.2040,,,0.2040,Skylake
+ml.c5.2xlarge,c5,8,16,0,,,up to 10 Gbps,30,20,,,0.4080,,,0.4080,Skylake
+ml.c5.4xlarge,c5,16,32,0,,,up to 10 Gbps,8,5,,,0.8160,,,0.8160,Skylake
+ml.c5.9xlarge,c5,36,72,0,,,10 Gbps,8,5,,,1.8360,,,1.8360,Skylake
+ml.c5.18xlarge,c5,72,144,0,,,25 Gbps,8,5,,,3.6720,,,3.6720,Skylake
+ml.c5n.xlarge,c5n,4,10.5,0,,,up to 25 Gbps,1,1,,,0.2590,,,,100 Gbps networking tier
+ml.c5n.2xlarge,c5n,8,21,0,,,up to 25 Gbps,1,1,,,0.5180,,,0.5180,100 Gbps networking tier
+ml.c5n.4xlarge,c5n,16,42,0,,,up to 25 Gbps,1,1,,,1.0370,,,1.0370,100 Gbps networking tier
+ml.c5n.9xlarge,c5n,36,96,0,,,50 Gbps,1,1,,,2.3330,,,2.3330,100 Gbps networking tier
+ml.c5n.18xlarge,c5n,72,192,0,,,100 Gbps,1,1,,,4.6660,,,4.6660,100 Gbps networking tier
+ml.c6i.xlarge,c6i,4,8,0,,,up to 12.5 Gbps,30,20,,,0.2040,,,0.2040,Ice Lake
+ml.c6i.2xlarge,c6i,8,16,0,,,up to 12.5 Gbps,30,20,,,0.4080,,,0.4080,Ice Lake
+ml.c6i.4xlarge,c6i,16,32,0,,,up to 12.5 Gbps,8,5,,,0.8160,,,0.8160,Ice Lake
+ml.c6i.8xlarge,c6i,32,64,0,,,12.5 Gbps,8,5,,,1.6320,,,1.6320,Ice Lake
+ml.c6i.12xlarge,c6i,48,96,0,,,18.75 Gbps,8,5,,,2.4480,,,2.4480,Ice Lake
+ml.c6i.16xlarge,c6i,64,128,0,,,25 Gbps,8,5,,,3.2640,,,3.2640,Ice Lake
+ml.c6i.24xlarge,c6i,96,192,0,,,37.5 Gbps,8,5,,,4.8960,,,4.8960,Ice Lake
+ml.c6i.32xlarge,c6i,128,256,0,,,50 Gbps,8,5,,,6.5280,,,6.5280,Ice Lake
+ml.c7i.large,c7i,2,4,0,,,up to 12.5 Gbps,30,30,30,,0.1071,,,,Sapphire Rapids
+ml.c7i.xlarge,c7i,4,8,0,,,up to 12.5 Gbps,30,30,30,,0.2142,,,,Sapphire Rapids
+ml.c7i.2xlarge,c7i,8,16,0,,,up to 12.5 Gbps,30,30,30,,0.4284,,,,Sapphire Rapids
+ml.c7i.4xlarge,c7i,16,32,0,,,up to 12.5 Gbps,8,8,8,,0.8568,,,,Sapphire Rapids
+ml.c7i.8xlarge,c7i,32,64,0,,,12.5 Gbps,8,8,8,,1.7136,,,,Sapphire Rapids
+ml.c7i.12xlarge,c7i,48,96,0,,,18.75 Gbps,8,8,8,,2.5704,,,,Sapphire Rapids
+ml.c7i.16xlarge,c7i,64,128,0,,,25 Gbps,8,8,8,,3.4272,,,,Sapphire Rapids
+ml.c7i.24xlarge,c7i,96,192,0,,,37.5 Gbps,8,8,8,,5.1408,,,,Sapphire Rapids
+ml.c7i.48xlarge,c7i,192,384,0,,,50 Gbps,8,8,8,,10.2816,,,,Sapphire Rapids
+ml.r5.large,r5,2,16,0,,,up to 10 Gbps,1,1,1,,0.1510,0.1510,,,
+ml.r5.xlarge,r5,4,32,0,,,up to 10 Gbps,1,1,1,,0.3020,0.3020,,,
+ml.r5.2xlarge,r5,8,64,0,,,up to 10 Gbps,1,1,1,,0.6050,0.6050,,,
+ml.r5.4xlarge,r5,16,128,0,,,up to 10 Gbps,1,1,1,,1.2100,1.2100,,,
+ml.r5.8xlarge,r5,32,256,0,,,10 Gbps,1,1,1,,2.4190,2.4190,,,
+ml.r5.12xlarge,r5,48,384,0,,,10 Gbps,1,1,1,,3.6290,3.6290,,,
+ml.r5.16xlarge,r5,64,512,0,,,20 Gbps,1,1,1,,4.8380,4.8380,,,
+ml.r5.24xlarge,r5,96,768,0,,,25 Gbps,1,1,1,,7.2580,7.2580,,,
+ml.r7i.large,r7i,2,16,0,,,up to 12.5 Gbps,30,30,30,,0.1588,,,0.1588,Sapphire Rapids
+ml.r7i.xlarge,r7i,4,32,0,,,up to 12.5 Gbps,30,30,30,,0.3175,,,0.3175,Sapphire Rapids
+ml.r7i.2xlarge,r7i,8,64,0,,,up to 12.5 Gbps,30,30,30,,0.6350,,,0.6350,Sapphire Rapids
+ml.r7i.4xlarge,r7i,16,128,0,,,up to 12.5 Gbps,8,8,8,,1.2701,,,1.2701,Sapphire Rapids
+ml.r7i.8xlarge,r7i,32,256,0,,,12.5 Gbps,8,8,8,,2.5402,,,2.5402,Sapphire Rapids
+ml.r7i.12xlarge,r7i,48,384,0,,,18.75 Gbps,8,8,8,,3.8102,,,3.8102,Sapphire Rapids
+ml.r7i.16xlarge,r7i,64,512,0,,,25 Gbps,8,8,8,,5.0803,,,5.0803,Sapphire Rapids
+ml.r7i.24xlarge,r7i,96,768,0,,,37.5 Gbps,8,8,8,,7.6205,,,7.6205,Sapphire Rapids
+ml.r7i.48xlarge,r7i,192,1536,0,,,50 Gbps,8,8,8,,15.2410,,,15.2410,Sapphire Rapids
+ml.g4dn.xlarge,g4dn,4,16,1,T4,16,up to 25 Gbps,1,1,,,0.7360,,,,Turing
+ml.g4dn.2xlarge,g4dn,8,32,1,T4,16,up to 25 Gbps,1,1,,,0.9400,,,,Turing
+ml.g4dn.4xlarge,g4dn,16,64,1,T4,16,up to 25 Gbps,1,1,,,1.5050,,,,Turing
+ml.g4dn.8xlarge,g4dn,32,128,1,T4,16,50 Gbps,1,1,,,2.7200,,,,Turing
+ml.g4dn.12xlarge,g4dn,48,192,4,T4,16,50 Gbps,1,1,,,4.8900,,,,Turing
+ml.g4dn.16xlarge,g4dn,64,256,1,T4,16,50 Gbps,1,1,,,5.4400,,,,Turing
+ml.g5.xlarge,g5,4,16,1,A10G,24,up to 10 Gbps,1,1,,,1.4080,,,1.4080,Ampere
+ml.g5.2xlarge,g5,8,32,1,A10G,24,up to 10 Gbps,1,1,,,1.5150,,,1.5150,Ampere
+ml.g5.4xlarge,g5,16,64,1,A10G,24,up to 25 Gbps,1,1,,,2.0300,,,2.0300,Ampere
+ml.g5.8xlarge,g5,32,128,1,A10G,24,25 Gbps,1,1,,,3.0600,,,3.0600,Ampere
+ml.g5.12xlarge,g5,48,192,4,A10G,24,40 Gbps,1,1,,,7.0900,,,7.0900,Ampere
+ml.g5.16xlarge,g5,64,256,1,A10G,24,25 Gbps,1,1,,,5.1200,,,5.1200,Ampere
+ml.g6.xlarge,g6,4,16,1,L4,24,up to 10 Gbps,,2,,,1.1270,1.1270,1.1270,1.1270,Ada Lovelace
+ml.g6.2xlarge,g6,8,32,1,L4,24,up to 10 Gbps,,2,,,1.2220,1.2220,1.2220,1.2220,Ada Lovelace
+ml.g6.4xlarge,g6,16,64,1,L4,24,up to 25 Gbps,,2,,,1.6540,1.6540,1.6540,1.6540,Ada Lovelace
+ml.g6.8xlarge,g6,32,128,1,L4,24,25 Gbps,,2,,,2.5180,2.5180,2.5180,2.5180,Ada Lovelace
+ml.g6.12xlarge,g6,48,192,4,L4,24,40 Gbps,,2,,,5.7520,5.7520,5.7520,5.7520,Ada Lovelace
+ml.g6.16xlarge,g6,64,256,1,L4,24,25 Gbps,,2,,,4.2460,4.2460,4.2460,4.2460,Ada Lovelace
+ml.g6.24xlarge,g6,96,384,4,L4,24,50 Gbps,,2,,,8.3440,8.3440,8.3440,8.3440,Ada Lovelace
+ml.g6.48xlarge,g6,192,768,8,L4,24,100 Gbps,,2,,,16.6880,16.6880,16.6880,16.6880,Ada Lovelace
+ml.p3.2xlarge,p3,8,61,1,V100,16,up to 10 Gbps,1,1,,,3.8250,,,,Volta
+ml.p4d.24xlarge,p4d,96,1152,8,A100,40,400 Gbps EFA,10,20,,256,25.2513,,,25.9100,Ampere NVLink
+ml.p4de.24xlarge,p4de,96,1152,8,A100,80,400 Gbps EFA,10,20,,256,31.5641,,,32.3875,Ampere NVLink
+ml.p5.4xlarge,p5,16,256,1,H100,80,100 Gbps,10,,,256,~8.26,,,8.2560,Hopper single-GPU slice; on-demand Training quota raised to 10 (2026-04-28); bulk pricing JSON still only publishes Cluster SKU - Training rate expected <=8.26
+ml.p5.48xlarge,p5,192,2048,8,H100,80,3200 Gbps EFA,10,20,,256,63.2960,63.2960,,66.0480,Hopper NVLink
+ml.p5e.48xlarge,p5e,192,2048,8,H200,141,3200 Gbps EFA,10,,,256,,,,,Hopper H200 [not sold in us-east-1]
+ml.p5en.48xlarge,p5en,192,2048,8,H200,141,3200 Gbps EFAv3,1,1,,256,72.7950,,,,Hopper H200 + EFAv3 (approx)
+ml.p6-b200.48xlarge,p6,192,2048,8,B200,180,3200 Gbps EFA,1,,,8,,,,,Blackwell; price TBD [not sold in us-east-1]
+ml.p6e-gb200.36xlarge,p6e,144,960,,GB200,,ultra,1,,,18,,,,,Blackwell Grace; price TBD [not sold in us-east-1]
+ml.trn1.2xlarge,trn1,8,32,1,Trainium,32,up to 12.5 Gbps,1,,,,1.5400,,,,2 NeuronCores
+ml.trn1.32xlarge,trn1,128,512,16,Trainium,32,800 Gbps EFA,,,,256,24.7300,,,24.7300,32 NeuronCores NeuronLink
