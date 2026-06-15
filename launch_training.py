@@ -75,7 +75,16 @@ def main() -> None:
     args = p.parse_args()
 
     role = resolve_role(args.role_arn)
-    session = smh.Session(boto_session=boto3.Session())
+    # Derive bucket/prefix from --output-s3 so the SDK uploads the source-code
+    # tarball into a bucket we actually have access to (instead of trying to
+    # create the default sagemaker-<region>-<account> bucket).
+    assert args.output_s3.startswith("s3://")
+    default_bucket, _, default_prefix = args.output_s3[5:].partition("/")
+    session = smh.Session(
+        boto_session=boto3.Session(),
+        default_bucket=default_bucket,
+        default_bucket_prefix=default_prefix or None,
+    )
     region = session.boto_region_name
     image_uri = resolve_image(region, args.instance_type)
 
